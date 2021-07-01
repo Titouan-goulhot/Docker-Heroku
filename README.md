@@ -18,6 +18,15 @@ you can run directly in you powerShell :
 
 ` docker run hello-world` -> will execute your first container throught the image 
 
+### Some commands 
+
+`docker --version` -> pretty clear isn't it ?
+`docker image ls` -> show your local image 
+`docker run <image ID>` -> execute a container 
+`docker image rm <image ID>` -> remove an image
+`docker ps -a` -> List of your container
+`docker start <container ID>` -> start a container which is stopped
+
 ## How to deploy an App 
 
 `docker build -t + id_docker/nom_projet`
