@@ -92,3 +92,6 @@ CMD ["echo", “Conversation depuis l’intérieur de la baleine"]`
 `heroku container:release web -a` + name_of_app_given_by_heroku
 `heroku open` => Open Application in navigator 
  
+ ![Heroku_Logo](https://s2.qwant.com/thumbr/0x380/5/7/be1aeb9ae63bbfeea1d85a8fa667dc7eefb42aaf7f9990f735a388e081e1b4/heroku-logo-3.png?u=https%3A%2F%2Fclipground.com%2Fimages%2Fheroku-logo-3.png&q=0&b=1&p=0&a=0)
+ 
+**Heroku** is a *Platform as a Service* (PaaS), very useful to deploy web applications on a server.   
