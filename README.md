@@ -59,14 +59,26 @@ From your terminal bash Linux :
 2. Edit your file with this code 
 `FROM  alpine
 LABEL maintainer="DockerGeeK"
-
 CMD ["echo", “Conversation depuis l’intérieur de la baleine"]`
 3. Now you can create a picture from this Dockerfile (after you named your picture) with : 
 `docker build -t name_picture .` 
 4. Then you can "run" it : 
 `docker run name_picture`
 
+**How to create a Dockerfile**
+
+* **FROM**  : will define the source of the picture
+* **RUN** : will execute some command in your container
+* **ADD** : will add (no kidding) some files in your container
+* **WORKDIR** : will define your work repository
+* **EXPOSE** : ~~I don't know how to traduce that in english~~
+* **VOLUME** : ~~Same problem...~~
+* **CMD** : Define the command by default when you execute a container.
+
 ## How to deploy an App 
+
+**First** you need to read [this](https://expressjs.com/fr/starter/hello-world.html), [this](https://devcenter.heroku.com/articles/container-registry-and-runtime), & [that](http://www.goring.org/resources/NodeandDocker.html)... See you later !
+
 
 `docker build -t + id_docker/nom_projet`
 
