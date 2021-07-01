@@ -1,5 +1,5 @@
 
-! [Docker-Logo](https://s2.qwant.com/thumbr/0x380/5/6/0d4e0a2c7c8518b622644066cbce588e737b82401eabe634c435067b67b75d/dockerhero.jpg?u=https%3A%2F%2Ftr4.cbsistatic.com%2Fhub%2Fi%2Fr%2F2016%2F10%2F18%2F831f017c-ee68-4bd6-8a5c-ab31b4d35d6d%2Fresize%2F770x%2F1cedcf2f03388a9720835a628a8a9765%2Fdockerhero.jpg&q=0&b=1&p=0&a=0)
+![Docker-Logo](https://s2.qwant.com/thumbr/0x380/5/6/0d4e0a2c7c8518b622644066cbce588e737b82401eabe634c435067b67b75d/dockerhero.jpg?u=https%3A%2F%2Ftr4.cbsistatic.com%2Fhub%2Fi%2Fr%2F2016%2F10%2F18%2F831f017c-ee68-4bd6-8a5c-ab31b4d35d6d%2Fresize%2F770x%2F1cedcf2f03388a9720835a628a8a9765%2Fdockerhero.jpg&q=0&b=1&p=0&a=0)
 
 # Docker-Heroku
 
@@ -29,6 +29,42 @@ you can run directly in you powerShell :
 `docker image rm <image ID>` -> remove an image
 `docker ps -a` -> List of your container
 `docker start <container ID>` -> start a container which is stopped
+
+## Work on Linux 
+
+You can work on a Linux Interface from your pc using a container. 
+
+Execute 
+
+`docker run -it ubuntu bash` -> In that way you can work with a classical  terminal bash Linux... In a container ! 
+
+Let's have some fun
+-------------------
+
+From your terminal bash Linux : 
+
+` apt update`
+ `apt install figlet`
+`figlet hello campus!`
+
+
+
+## Create your own picture with *Dockerfile
+
+"Docker can build images automatically by reading the instructions from a Dockerfile. A Dockerfile is a text document that contains all the commands a user could call on the command line to assemble an image. Using docker build users can create an automated build that executes several command-line instructions in succession." -Not from me.
+
+
+1. In an empty repository, creat a file named "Dockerfile" 
+    *tips -> you can also (from your Powershel & in the right repository in your machine) execute this command `touch Dockerfile`
+2. Edit your file with this code 
+`FROM  alpine
+LABEL maintainer="DockerGeeK"
+
+CMD ["echo", “Conversation depuis l’intérieur de la baleine"]`
+3. Now you can create a picture from this Dockerfile (after you named your picture) with : 
+`docker build -t name_picture .` 
+4. Then you can "run" it : 
+`docker run name_picture`
 
 ## How to deploy an App 
 
