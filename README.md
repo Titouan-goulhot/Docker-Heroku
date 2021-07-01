@@ -80,6 +80,7 @@ CMD ["echo", “Conversation depuis l’intérieur de la baleine"]`
 **First** you need to read [this](https://expressjs.com/fr/starter/hello-world.html), [this](https://devcenter.heroku.com/articles/container-registry-and-runtime), & [that](http://www.goring.org/resources/NodeandDocker.html)... See you later !
 
 
+
 `docker build -t + id_docker/nom_projet`
 
 `heroku login` => connect to Heroku account
@@ -90,9 +91,4 @@ CMD ["echo", “Conversation depuis l’intérieur de la baleine"]`
 
 `heroku container:release web -a` + name_of_app_given_by_heroku
 `heroku open` => Open Application in navigator 
-
-
-
-### TIPS
-
-`touch Dockerfile` => will creat an empty Dockerfile without any extension 
+ 
