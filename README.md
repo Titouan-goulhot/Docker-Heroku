@@ -6,7 +6,17 @@
                                    -DockerHub
                                    -Heroku
 
-=> You must 
+=> You must download & Install 
+[Docker Desktop](https://hub.docker.com/)
+
+#### Just to be sure Docker works fine...
+
+you can run directly in you powerShell : 
+`Docker` -> Will make appear a list of command 
+
+&
+
+` docker run hello-world` -> will execute your first container throught the image 
 
 ## How to deploy an App 
 
