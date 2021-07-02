@@ -1,7 +1,7 @@
 
 ![Docker-Logo](https://s2.qwant.com/thumbr/0x380/5/6/0d4e0a2c7c8518b622644066cbce588e737b82401eabe634c435067b67b75d/dockerhero.jpg?u=https%3A%2F%2Ftr4.cbsistatic.com%2Fhub%2Fi%2Fr%2F2016%2F10%2F18%2F831f017c-ee68-4bd6-8a5c-ab31b4d35d6d%2Fresize%2F770x%2F1cedcf2f03388a9720835a628a8a9765%2Fdockerhero.jpg&q=0&b=1&p=0&a=0)
 
-# Docker-Heroku
+# Docker
 
 ### First of all...
 
@@ -75,6 +75,9 @@ CMD ["echo", “Conversation depuis l’intérieur de la baleine"]`
 * **VOLUME** : ~~Same problem...~~
 * **CMD** : Define the command by default when you execute a container.
 
+ 
+# Heroku  ![Heroku_Logo](https://s2.qwant.com/thumbr/0x380/5/7/be1aeb9ae63bbfeea1d85a8fa667dc7eefb42aaf7f9990f735a388e081e1b4/heroku-logo-3.png?u=https%3A%2F%2Fclipground.com%2Fimages%2Fheroku-logo-3.png&q=0&b=1&p=0&a=0)
+
 ## How to deploy an App 
 
 **First** you need to read [this](https://expressjs.com/fr/starter/hello-world.html), [this](https://devcenter.heroku.com/articles/container-registry-and-runtime), & [that](http://www.goring.org/resources/NodeandDocker.html)... See you later !
@@ -91,7 +94,5 @@ CMD ["echo", “Conversation depuis l’intérieur de la baleine"]`
 
 `heroku container:release web -a` + name_of_app_given_by_heroku
 `heroku open` => Open Application in navigator 
- 
- ![Heroku_Logo](https://s2.qwant.com/thumbr/0x380/5/7/be1aeb9ae63bbfeea1d85a8fa667dc7eefb42aaf7f9990f735a388e081e1b4/heroku-logo-3.png?u=https%3A%2F%2Fclipground.com%2Fimages%2Fheroku-logo-3.png&q=0&b=1&p=0&a=0)
- 
+  
 **Heroku** is a *Platform as a Service* (PaaS), very useful to deploy web applications on a server.   
